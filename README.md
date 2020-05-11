@@ -21,3 +21,4 @@
 // git reset --hard <to_commit>
 
 //git revert
+// .gitignore
