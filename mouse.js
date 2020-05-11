@@ -1,11 +1,11 @@
 
-Cat.prototype.eat = function (mouse){
-    this.stomach.push(mouse);
-}
-function Mouse(mouse){
-    this.mouse = mouse;
+function Mouse(name){
+    this.name = name;
+    this.dead = false;
 }
 
-var Miccky = new Mouse('Miccky');
-Cat.eat(Miccky);
+Mouse.prototype.die = function (){
+    this.dead = true;
+}
+
 module.exports = Mouse;
